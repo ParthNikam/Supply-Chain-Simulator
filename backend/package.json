@@ -8,7 +8,7 @@
         "tsc": "tsc",
         "build": "npm run tsc",
         "start": "ts-node-dev --transpileOnly ./src/server.ts",
-        "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+        "dev": "bun --watch src/server.ts",
         "prod": "tsc && node ./build/src/server.js"
     },
     "keywords": [
@@ -31,6 +31,7 @@
         "module-alias": "^2.2.2",
         "morgan": "^1.9.1",
         "mysql2": "^1.7.0",
+        "pocketbase": "^0.26.2",
         "rotating-file-stream": "^1.4.6",
         "sequelize": "^6.37.7",
         "ts-node-dev": "^1.0.0-pre.43",
